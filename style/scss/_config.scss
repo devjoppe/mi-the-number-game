@@ -1,0 +1,61 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;700;900&display=swap');
+
+
+// Mixins
+@mixin mainfont {
+    font-family: 'Archivo', sans-serif;
+}
+
+// Color scheme
+$color-light: #F5EDDC;
+$color-medium-gray: #CFD2CF;
+$color-medium-blue: #A2B5BB;
+$color-red: #EB1D36;
+
+body {
+    background: $color-light;
+    font-size: 20px;
+    @include mainfont;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+// Containers
+
+.container {
+    display: flex;
+    width:560px;
+    height: 720px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+// Components
+.game-view {
+    display: flex;
+    width: inherit;
+    height: inherit;
+}
+
+button {
+    display: flex;
+    height: fit-content;
+    font-size: 32px;
+    border-radius: 15px;
+    padding: 16px;
+    border: none;
+    @include mainfont;
+}
+
+// settings
+.hide {
+    display: none;
+}
