@@ -1,30 +1,30 @@
-const gameEl = document.querySelector('.game-view');
-const startGameEl = document.querySelector('.choose-mode');
+// Main game elements
+const startGameEl = document.querySelector('#startgame');
+const gameEl = document.querySelector('#maingame');
+const highscoreEl = document.querySelector('#highscore');
 
-const hardMode = 20;
-const easyMode = 10;
+const startGameBt = document.querySelector('.choose-mode');
 
+// Game mode
+
+
+// Start screen function
 const startGame = () => {
-    
-    console.log('Game starts');
-    
+    console.log('Startscreen');
 }
 
-startGameEl.addEventListener('click', (e) => {
-    
-    console.log('clicking', e.target.dataset.mode);
+// Start a new game button click
+startGameBt.addEventListener('click', (e) => {
 
+    startGameEl.classList.add('hide');
+
+    // Hard or Easy mode?
     if(e.target.dataset.mode == 'easy') {
         console.log('Easy mode');
-        game(easyMode);
+        game(10);
     } else if (e.target.dataset.mode == 'hard') {
         console.log('Hard mode');
-        game(hardMode);
-    }
-
-    if(gameEl.classList.contains('game-view--start')) { 
-        console.log('hide start game view');
-        gameEl.classList.add('hide');
+        game(20);
     }
 
 });

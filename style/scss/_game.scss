@@ -1,0 +1,52 @@
+@use 'config';
+
+.game-view--game {
+    flex-direction: column;
+}
+
+.game-area {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.game-feedback, .game-guess-number {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.guess-text {
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.incorrect {
+    color: config.$color-red;
+}
+
+.correct {
+    color: config.$color-green;
+}
+
+.highscore-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.guess-number-of-times {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: config.$color-medium-blue;
+    width: 56px;
+    height: 56px;
+    font-size: 28px;
+    border-radius: 50%;
+    color: white;
+}

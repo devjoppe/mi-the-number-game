@@ -11,12 +11,16 @@
 $color-light: #F5EDDC;
 $color-medium-gray: #CFD2CF;
 $color-medium-blue: #A2B5BB;
+$color-dark-blue: #34383a;
 $color-red: #EB1D36;
 $color-blue: #1d8eeb;
+$color-green: #1deb8b;
 
 body {
     background: $color-light;
     font-size: 20px;
+    color:#202020;
+    line-height: 28px;
     @include mainfont;
 }
 
@@ -35,7 +39,7 @@ main {
     width:560px;
     height: 720px;
     background: white;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -54,6 +58,7 @@ button {
     padding: 16px 32px 16px 32px;
     margin: 16px;
     border: none;
+    cursor: pointer;
     @include mainfont;
 }
 

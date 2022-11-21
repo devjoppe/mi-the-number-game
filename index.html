@@ -12,7 +12,7 @@
 <body>
     <main>
         <div class="container">
-            <div class="game-view game-view--start">
+            <div id="startgame" class="game-view game-view--start">
                 <span class="welcome-text">Welcome to</span>
                 <h1>Guess the Number</h1>
                 <p>Game description!</p>
@@ -22,16 +22,48 @@
                     <button class="bg-color-red" data-mode="hard">Hard</button>
                 </div>
             </div>
-            <div class="game-view game-view--game hide">
-
+            <div id="maingame" class="game-view game-view--game hide">
+                <div class="quit-game-header">
+                    Quit game
+                </div>
+                <div class="game-area">
+                    <div class="game-feedback">
+                        <span class="guess-text"></span>
+                        <span class="guess-statistics"></span>
+                        <span>You guessed the number:</span>
+                        <span class="guess-number-of-times">?</span>
+                        <span class="guess-help-text"></span>
+                    </div>
+                    <div class="game-guess-number">
+                        <form id="guess-the-number">
+                            <input id="usernumber" type="number">
+                            <button type="submit">Check number</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="highscore-footer">
+                    <button>Check highscore</button>
+                </div>
             </div>
-            <div class="game-view game-view--highscore hide">
+            <div id="highscore" class="game-view game-view--highscore hide">
+                <div class="success-message correct">
+                    <span class="message"></span>
+                    <span class="new-highscore"></span>
+                </div>
+                <h2>Highscore list</h2>
+                <div class="scoreboard">
 
+                </div>
+                <div class="play-again">
+                    <button class="bg-color-blue" data-mode="play">Play again</button>
+                    <button class="bg-color-red" data-mode="quit">Quit</button>
+                </div>
             </div>
         </div>
     </main>
     <script src="js/startgame.js"></script>
     <script src="js/game.js"></script>
     <script src="js/score.js"></script>
+    <script src="js/highscore.js"></script>
 </body>
 </html>
