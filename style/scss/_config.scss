@@ -32,6 +32,10 @@ main {
     width: 100%;
 }
 
+h1 {
+    color: $color-dark-blue;
+}
+
 // Containers
 
 .container {
@@ -50,16 +54,27 @@ main {
     height: inherit;
 }
 
+.emoji {
+    font-size: 48px;
+}
+
 button {
     display: flex;
     height: fit-content;
-    font-size: 32px;
-    border-radius: 15px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-weight: 800;
+    border-radius: 48px;
     padding: 16px 32px 16px 32px;
     margin: 16px;
     border: none;
     cursor: pointer;
     @include mainfont;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 // settings

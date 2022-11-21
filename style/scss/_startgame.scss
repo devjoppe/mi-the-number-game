@@ -1,8 +1,15 @@
+@use 'config';
+
 .game-view--start {
     justify-content: center;
     align-items: center;
     width: inherit;
     flex-direction: column;
+    p {
+        display: inline-block;
+        width: 75%;
+        text-align: center;
+    }
 }
 
 .choose-mode {
@@ -12,4 +19,5 @@
 
 .welcome-text {
     font-weight: 700;
+    font-size: 28px;
 }
