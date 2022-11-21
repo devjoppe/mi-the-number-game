@@ -3,8 +3,11 @@ const userInput = document.querySelector('#guess-the-number');
 const userInputFeedback = document.querySelector('.guess-text');
 const guessNumberOfTimes = document.querySelector('.guess-number-of-times');
 const guessHelp = document.querySelector('.guess-help-text');
+const checkHighscoreBt = document.querySelector('#checkhighscore');
+const quitHeader = document.querySelector('#quit-game');
 
 let gameModeAnswer = 0;
+let gameModePlay = 0;
 let guessNumber = 0;
 
 // Game mode calculation
@@ -16,6 +19,7 @@ const gameModeNumber = gameMode => {
 function game (gameMode) {
     console.log('Game starts');
     gameModeAnswer = gameModeNumber(gameMode);
+    gameModePlay = gameMode;
     guessNumber = 0;
     console.log(guessNumber);
 
@@ -57,4 +61,8 @@ userInput.addEventListener('submit', (e) => {
         }
     }
     userInput.reset()
+})
+
+quitHeader.addEventListener('click', () => {
+    location.reload()
 })

@@ -24,7 +24,7 @@
             </div>
             <div id="maingame" class="game-view game-view--game hide">
                 <div class="quit-game-header">
-                    Quit game
+                    <span id="quit-game" class="quit-header">Quit game</span>
                 </div>
                 <div class="game-area">
                     <div class="game-feedback">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="highscore-footer">
-                    <button>Check highscore</button>
+                    <button id="checkhighscore">Check highscore</button>
                 </div>
             </div>
             <div id="highscore" class="game-view game-view--highscore hide">
@@ -52,12 +52,19 @@
                 </div>
                 <h2>Highscore list</h2>
                 <div class="scoreboard">
-
+                    <!-- Highscore list and latest result -->
                 </div>
                 <div class="play-again">
                     <button class="bg-color-blue" data-mode="play">Play again</button>
                     <button class="bg-color-red" data-mode="quit">Quit</button>
                 </div>
+            </div>
+            <div id="check-highscore" class="game-view game-view--highscore hide">
+                <h2>Highscore list</h2>
+                <div class="scoreboard-list">
+                    <!-- Highscore list -->
+                </div>
+                <button id="close" class="bg-color-blue">close</button>
             </div>
         </div>
     </main>

@@ -5,9 +5,6 @@ const highscoreEl = document.querySelector('#highscore');
 
 const startGameBt = document.querySelector('.choose-mode');
 
-// Game mode
-
-
 // Start screen function
 const startGame = () => {
     console.log('Startscreen');
