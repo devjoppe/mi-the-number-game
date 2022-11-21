@@ -12,6 +12,7 @@ $color-light: #F5EDDC;
 $color-medium-gray: #CFD2CF;
 $color-medium-blue: #A2B5BB;
 $color-red: #EB1D36;
+$color-blue: #1d8eeb;
 
 body {
     background: $color-light;
@@ -50,7 +51,8 @@ button {
     height: fit-content;
     font-size: 32px;
     border-radius: 15px;
-    padding: 16px;
+    padding: 16px 32px 16px 32px;
+    margin: 16px;
     border: none;
     @include mainfont;
 }
@@ -58,4 +60,14 @@ button {
 // settings
 .hide {
     display: none;
+}
+
+.bg-color-blue {
+    background: $color-blue;
+    color: white;
+}
+
+.bg-color-red {
+    background: $color-red;
+    color: white;
 }

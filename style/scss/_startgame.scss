@@ -1,0 +1,15 @@
+.game-view--start {
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    flex-direction: column;
+}
+
+.choose-mode {
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-text {
+    font-weight: 700;
+}

@@ -13,17 +13,25 @@
     <main>
         <div class="container">
             <div class="game-view game-view--start">
-                <button>Hard</button>
-                <button>Easy</button>
+                <span class="welcome-text">Welcome to</span>
+                <h1>Guess the Number</h1>
+                <p>Game description!</p>
+                <p>Choose your difficulty:</p>
+                <div class="choose-mode">
+                    <button class="bg-color-blue" data-mode="easy">Easy</button>
+                    <button class="bg-color-red" data-mode="hard">Hard</button>
+                </div>
             </div>
-            <div class="game-view game-view--game">
+            <div class="game-view game-view--game hide">
 
             </div>
-            <div class="game-view game-view--highscore">
+            <div class="game-view game-view--highscore hide">
 
             </div>
         </div>
     </main>
-    <script src="score"></script>
+    <script src="js/startgame.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/score.js"></script>
 </body>
 </html>
