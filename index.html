@@ -31,19 +31,19 @@
                     <div class="game-feedback">
                         <span class="guess-text"></span>
                         <span class="guess-statistics"></span>
-                        <span>You guessed the number:</span>
+                        <span class="guess-info">You guessed the number:</span>
                         <span class="guess-number-of-times">?</span>
                         <span class="guess-help-text"></span>
                     </div>
                     <div class="game-guess-number">
-                        <form id="guess-the-number">
-                            <input id="usernumber" type="number">
-                            <button type="submit">Check number</button>
+                        <form id="guess-the-number" class="numberform">
+                            <input id="usernumber" class="number-input" type="number">
+                            <button class="checkbt" type="submit">Check</button>
                         </form>
                     </div>
                 </div>
                 <div class="highscore-footer">
-                    <button id="checkhighscore">Check highscore</button>
+                    <button class="highscorebt" id="checkhighscore">Highscore</button>
                 </div>
             </div>
             <div id="highscore" class="game-view game-view--highscore hide">

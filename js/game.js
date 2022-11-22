@@ -49,15 +49,15 @@ userInput.addEventListener('submit', (e) => {
         gameEl.classList.add('hide');
         showHighScore(guessNumber, userInputNr);
     } else {
-        userInputFeedback.innerHTML = `Incorrect!`;
+        userInputFeedback.innerHTML = `Incorrect!<span class="emoji">&#128555;</span>`;
         userInputFeedback.classList.add('incorrect');
         userInputFeedback.nextElementSibling.innerHTML = `Number of guesses: ${guessNumber}`;
         guessNumberOfTimes.innerHTML = `${userInputNr}`;
         console.log('Incorrect');
         if(gameModeAnswer < userInputNr) {
-            guessHelp.innerHTML = `The number is too high!<br>Try again.`;
+            guessHelp.innerHTML = `The number is too high! &#x1F44D;<br>Try again.`;
         } else if(gameModeAnswer > userInputNr) {
-            guessHelp.innerHTML = `The number is too low!<br>Try again.`;
+            guessHelp.innerHTML = `The number is too low. &#x1F44E;<br>Try again!`;
         }
     }
     userInput.reset()

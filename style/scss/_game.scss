@@ -21,9 +21,34 @@
     align-items: center;
 }
 
+.game-guess-number {
+    justify-content: flex-start;
+    flex: none;
+    align-items: center;
+}
+
+.numberform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .guess-text {
-    font-size: 48px;
+    display: inline-block;
+    width: 75%;    
+    font-size: 36px;
     margin-bottom: 24px;
+    font-weight: 800;
+    line-height: 42px;
+}
+
+.guess-info {
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.guess-help-text {
+    font-style: italic;
 }
 
 .incorrect {
@@ -46,11 +71,27 @@
     background: config.$color-medium-blue;
     width: 56px;
     height: 56px;
-    font-size: 28px;
+    font-size: 42px;
     border-radius: 50%;
     color: white;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.guess-statistics {
+    margin-bottom: 16px;
 }
 
 .quit-header {
     cursor: pointer;
+}
+
+.checkbt {
+    background: config.$color-green;
+    color: rgb(26, 88, 64);
+}
+
+.highscorebt {
+    margin-top: 32px;
+    font-size: 16px;
 }
