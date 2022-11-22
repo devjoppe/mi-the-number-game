@@ -84,6 +84,9 @@
 
 .quit-header {
     cursor: pointer;
+    margin: 16px;
+    color: config.$color-red;
+    font-weight: 700;
 }
 
 .checkbt {

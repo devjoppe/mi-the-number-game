@@ -26,7 +26,8 @@
 .new-highscore {
     font-size: 32px;
     margin-bottom: 32px;
-    color: white;
+    color: config.$color-gold;
+    font-weight: 700;
 }
 
 .scoreboard, .scoreboard-list {
@@ -47,4 +48,11 @@
 .play-again {
     display: flex;
     flex-direction: row;
+}
+
+.awsome {
+    color: config.$color-green;
+    font-size: 32px;
+    margin-bottom: 24px;
+    font-weight: 800;
 }

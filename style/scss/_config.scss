@@ -15,6 +15,7 @@ $color-dark-blue: #34383a;
 $color-red: #EB1D36;
 $color-blue: #1d8eeb;
 $color-green: #1deb8b;
+$color-gold: #fffb16;
 
 body {
     background: $color-light;
@@ -39,6 +40,7 @@ h1 {
 // Inputs
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
+    appearance: none;
 }
 
 input[type=number]:focus {

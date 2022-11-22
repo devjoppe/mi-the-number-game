@@ -20,12 +20,12 @@ function showHighScore (numberGuesses, userInputNr) {
 
     if(scores.length == 0 || numberGuesses < scores[0].score) {
         console.log('New highscore');
-        newHighscore.innerHTML = `New Highscore!`;
+        newHighscore.innerHTML = `&#x1F601; New Highscore!`;
     } else {
         console.log('No new highscore');
     }
 
-    userMessage.innerHTML = `<span class="awsome">Awsome!</span><br>${numberGuesses} is correct!<br>It took you ${numberGuesses} guesses and this is game ${gameNumber}.`;
+    userMessage.innerHTML = `<span class="awsome">Awsome!<br>&#x1F31F;</span><br><br><strong>${numberGuesses} is correct!<strong><br>It took you ${numberGuesses} guesses and this is game ${gameNumber}.`;
 
     // Store the new result
     scores.push({

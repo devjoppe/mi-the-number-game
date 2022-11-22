@@ -64,5 +64,5 @@ userInput.addEventListener('submit', (e) => {
 })
 
 quitHeader.addEventListener('click', () => {
-    location.reload()
+    location.reload();
 })
